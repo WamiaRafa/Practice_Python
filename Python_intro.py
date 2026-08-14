@@ -29,3 +29,21 @@ num4= int(input("Enter a number : "))
 
 sum2=num3+num4
 print("sum : ", sum2)
+
+#Operator
+#arithmetic opertaor
+a=7
+b=2
+print('Sum', a+b)
+print('substraction', a-b)
+print('multipication ', a*b)
+print('Division ',a/b)
+print('Modulo :', a%b)
+print('Pwer :', a**b)
+#assignment Operator
+x=5
+a+=b
+print('A:', a)
+
+print(a>b)
+print('a==b=', a==b)
