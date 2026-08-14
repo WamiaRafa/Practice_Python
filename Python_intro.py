@@ -22,3 +22,10 @@ print(type(numf))
       
 nums=str(num1)
 print(type(numf))
+
+#user input
+num3= int(input("Enter a number : "))
+num4= int(input("Enter a number : "))
+
+sum2=num3+num4
+print("sum : ", sum2)
