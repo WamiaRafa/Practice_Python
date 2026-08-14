@@ -44,6 +44,14 @@ print('Pwer :', a**b)
 x=5
 a+=b
 print('A:', a)
-
+# Comparison Operator
 print(a>b)
 print('a==b=', a==b)
+print('a >=b=', a<=b)
+print((a>2)and (b>=6))
+# Logical Operator
+print(True and True)
+print(True and False)
+
+print(True or True)
+print(True or False)
