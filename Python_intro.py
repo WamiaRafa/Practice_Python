@@ -12,3 +12,13 @@ isStudent=True #boolean
 
 print(type(name))
 print(type(age))
+
+
+#type conversion
+num=10
+print(type(num))
+numf=float(num)
+print(type(numf))
+      
+nums=str(num1)
+print(type(numf))
