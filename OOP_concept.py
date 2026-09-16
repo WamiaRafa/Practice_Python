@@ -60,3 +60,13 @@ r1=Rectangle(5,2)
 
 print(r1.area())  
 print("Diameter" , r1.diameter())
+
+
+class Circle :
+   def __init__(self, radius):
+     self.radius=radius
+   def calArea(self):
+     return self.radius*self.radius
+
+c1=Circle(4)
+print("Circle Area: ",c1.calArea())     
