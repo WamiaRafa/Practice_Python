@@ -33,15 +33,30 @@
 #s1.ID()
 
 
-class Dog :
+#class Dog :
 
- def __init__(self, name , age):
+ #def __init__(self, name , age):
   
-  self.name=name
-  self.age=age
- def bark(self):
-  print(self.name , "says Woof")
+  #self.name=name
+  #self.age=age
+ #def bark(self):
+  #print(self.name , "says Woof")
 # Create an object
-d1 = Dog("Buddy", "3")
+#d1 = Dog("Buddy", "3")
 # Call the bark method
-d1.bark()
+#d1.bark()
+
+class Rectangle :
+  
+  def __init__ (self, length, width) :
+    self.length=length
+    self.width=width
+  def area(self) :
+   return self.length * self.width
+  def diameter(self): 
+   total = 2*(self.length + self.width) 
+   return total
+r1=Rectangle(5,2)
+
+print(r1.area())  
+print("Diameter" , r1.diameter())
