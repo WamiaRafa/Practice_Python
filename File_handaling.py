@@ -1,3 +1,5 @@
+import os
+
 f=open("demo.txt" ,"rt")
 print(f.read())
 f.close()
@@ -21,3 +23,10 @@ with open("program.txt" , "r") as g :
 # with open( "Myfile.txt" , "a" ) as g :
   #g.write("append")
  print(g.read())
+ # delete file
+os.remove("Myfile.txt")
+#if file exists or not
+if os.path.exists("rafa.txt"):
+ os.remove("rafa.txt")
+else:
+ print("file doesnot exist")   
