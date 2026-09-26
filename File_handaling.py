@@ -1,4 +1,4 @@
-import os
+#import os
 import csv
 #f=open("demo.txt" ,"rt")
 #print(f.read())
@@ -31,7 +31,18 @@ import csv
 #else:
  #print("file doesnot exist")   
 # Read csv file
-with open("try.csv" , "r") as file :
-   reader= csv.reader(file)
+#with open("try.csv" , "r") as file :
+ #  reader= csv.reader(file)
+  # for row in reader:
+   #  print(row)  
+#read csv file with dictReader
+
+with open("student.csv" ,"r", encoding="latin-1" ) as file :
+
+   reader=csv.DictReader(file)
+   print(reader.fieldnames)
+
    for row in reader:
-     print(row)  
+        print(row)
+   #for row in reader:
+    #  print(row["name"] , row["marks"]) 
