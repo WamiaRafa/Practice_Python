@@ -32,12 +32,17 @@
 import json
 
 student = {
-   "name" :" rafa",
+  "name" :" rafa",
    "roll" : 102,
    "marks":80,
    "subjects": ["Math" , "Science" ,"Ënglish"],
    "is_passed" :True
+}
+with open("student.json" ,"w") as file:
+ json.dump(student, file, indent= 4)
 
-}  
-with open(" student.json" ,"w") as file:
-   json.dump(student, file, indent= 4)
+#json file to  python file  
+with open("student.json", "r") as file:
+  data= json.load(file)
+  print(type(data))
+  print(data)
